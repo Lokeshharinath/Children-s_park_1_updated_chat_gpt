@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Park</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Children's Park</h1>
+        <img src="logo.png" alt="Park Logo">
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Explore the Park</h2>
+        <div class="gallery">
+            <!-- Random park images here -->
+            <img src="park1.jpg" alt="Park Image 1">
+            <img src="park2.jpg" alt="Park Image 2">
+            <img src="park3.jpg" alt="Park Image 3">
+        </div>
+        <h2>Book Your Visit</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <button type="submit" class="button">Book Now</button>
+        </form>
+    </div>
+    <div class="sidebar">
+        <h2>Latest News</h2>
+        <p>Check out our latest events and activities!</p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Children's Park. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript code here
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Code to handle form submission (e.g., sending data to server)
+            // You can use AJAX or other methods here
+            alert('Your booking has been submitted!');
+        });
+    </script>
+</body>
+</html>
